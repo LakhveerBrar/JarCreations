@@ -1,3 +1,5 @@
+using JarCreations.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +26,8 @@ namespace JarCreations
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<JarCreationsContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("JarCreationsContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
