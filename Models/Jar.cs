@@ -21,5 +21,7 @@ namespace JarCreations.Models
         public string Size { get; set; }
 
         public string Capacity { get; set; }
+
+        public string Rating { get; set; }
     }
 }
