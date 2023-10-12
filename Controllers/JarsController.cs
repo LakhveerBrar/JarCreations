@@ -79,7 +79,7 @@ namespace JarCreations.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price")] Jar jar)
+        public async Task<IActionResult> Create([Bind("Id,Name,ReleaseDate,Type,Price,Rating,Materials,Size,Capacity")] Jar jar)
         {
             if (ModelState.IsValid)
             {

@@ -41,6 +41,7 @@ namespace JarCreations.Models
                         Materials = "Glass",
                         Size = "100",
                         Capacity = "1lb",
+                        Rating = "R",
                         Price = 7.99M
                     },
                     new Jar
@@ -51,6 +52,7 @@ namespace JarCreations.Models
                         Materials = "Glass",
                         Size = "100",
                         Capacity = "1lb",
+                        Rating = "B",
                         Price = 7.99M
                     },
                     new Jar
@@ -61,6 +63,7 @@ namespace JarCreations.Models
                         Materials = "Glass",
                         Size = "100",
                         Capacity = "1lb",
+                        Rating = "C",
                         Price = 7.99M
                     },
                     new Jar
@@ -71,6 +74,7 @@ namespace JarCreations.Models
                         Materials = "Glass",
                         Size = "100",
                         Capacity = "1lb",
+                        Rating = "D",
                         Price = 7.99M
                     },
                     new Jar
@@ -81,6 +85,7 @@ namespace JarCreations.Models
                         Materials = "Glass",
                         Size = "100",
                         Capacity = "1lb",
+                        Rating = "E",
                         Price = 7.99M
                     },
                     new Jar
@@ -91,6 +96,7 @@ namespace JarCreations.Models
                         Materials = "Glass",
                         Size = "100",
                         Capacity = "1lb",
+                        Rating = "F",
                         Price = 7.99M
                     }
 

@@ -2,7 +2,7 @@
 
 namespace JarCreations.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class Rating : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
