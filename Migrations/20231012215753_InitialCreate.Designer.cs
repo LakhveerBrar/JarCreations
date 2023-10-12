@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JarCreations.Migrations
 {
     [DbContext(typeof(JarCreationsContext))]
-    [Migration("20231012212436_InitialCreate")]
+    [Migration("20231012215753_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

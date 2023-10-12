@@ -20,9 +20,34 @@ namespace JarCreations.Controllers
         }
 
         // GET: Jars
-        public async Task<IActionResult> Index()
+        // GET: Movies
+        public async Task<IActionResult> Index(string jarType, string searchString)
         {
-            return View(await _context.Jar.ToListAsync());
+            // Use LINQ to get list of genres.
+            IQueryable<string> typeQuery = from m in _context.Jar
+                                            orderby m.Type
+                                            select m.Type;
+
+            var movies = from m in _context.Jar
+                         select m;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(s => s.Name.Contains(searchString));
+            }
+
+            if (!string.IsNullOrEmpty(jarType))
+            {
+                movies = movies.Where(x => x.Type == jarType);
+            }
+
+            var jarTypeVM = new JarsTypeViewModel
+            {
+                Types = new SelectList(await typeQuery.Distinct().ToListAsync()),
+                Jars = await movies.ToListAsync()
+            };
+
+            return View(jarTypeVM);
         }
 
         // GET: Jars/Details/5
