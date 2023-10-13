@@ -1,6 +1,29 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+/*css of About us*/
+/* Style the container that holds the content */
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the title */
+h1 {
+    font-size: 36px;
+    color: #333; /* Customize the text color */
+    margin-bottom: 20px;
+}
+
+/* Style the paragraph text */
+#jj{
+    font-size: 18px;
+    line-height: 1.6; /* Adjust line height for better readability */
+    color: red; /* Customize the text color */
+    margin-bottom: 20px;
+    text-align: justify; /* Justify text for cleaner appearance */
+}
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -61,6 +84,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-image:src(../NewFolder/img1.jpg)
 }
 .footer {
   position: absolute;
@@ -69,3 +93,6 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+
+
