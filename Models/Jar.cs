@@ -7,6 +7,9 @@ namespace JarCreations.Models
     public class Jar
     {
         public int Id { get; set; }
+
+        [StringLength(60, MinimumLength = 3)]
+        [Required]
         public string Name { get; set; }
 
         [Display(Name = "Release Date")]
@@ -14,13 +17,19 @@ namespace JarCreations.Models
         public DateTime ReleaseDate { get; set; }
         public string Type { get; set; }
 
+        [Range(1, 100)]
+        [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
 
+           [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
+    [Required]
+    [StringLength(30)]
         public string Materials { get; set; }
         public string Size { get; set; }
 
         public string Capacity { get; set; }
+
 
         public string Rating { get; set; }
     }

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JarCreations.Migrations
 {
     [DbContext(typeof(JarCreationsContext))]
-    [Migration("20231012232109_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20231013134028_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,10 +32,14 @@ namespace JarCreations.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Materials")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(30)")
+                        .HasMaxLength(30);
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(60)")
+                        .HasMaxLength(60);
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18, 2)");

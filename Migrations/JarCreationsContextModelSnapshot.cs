@@ -30,10 +30,14 @@ namespace JarCreations.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Materials")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(30)")
+                        .HasMaxLength(30);
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(60)")
+                        .HasMaxLength(60);
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18, 2)");

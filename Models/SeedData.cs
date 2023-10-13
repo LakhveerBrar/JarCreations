@@ -33,17 +33,16 @@ namespace JarCreations.Models
                 }
 
                 context.Jar.AddRange(
-                    new Jar
-                    {
-                        Name = "When Harry Met Sally",
-                        ReleaseDate = DateTime.Parse("1989-2-12"),
-                        Type = " Comedy",
-                        Materials = "Glass",
-                        Size = "100",
-                        Capacity = "1lb",
-                        Rating = "R",
-                        Price = 7.99M
-                    },
+    new Jar
+    {
+        Name = "Lab Glassware",
+        ReleaseDate = DateTime.Parse("1989-2-12"),
+        Type = "Scientific",
+        Materials = "Borosilicate Glass",
+        Size = "250 ml",
+        Capacity = "0.55 lb", 
+        Price = 19.99M
+    },
                     new Jar
                     {
                         Name = "ironman",
@@ -55,50 +54,88 @@ namespace JarCreations.Models
                         Rating = "B",
                         Price = 7.99M
                     },
+    new Jar
+    {
+        Name = "Decorative Jar",
+        Type = "Decoration",
+        Materials = "Ceramic",
+        Size = "32 oz",
+        Capacity = "1.5 lb", 
+        Price = 12.99M
+    },
+    new Jar
+    {
+        Name = "Mason Jar",
+        Type = "Canning",
+        Materials = "Glass",
+        Size = "16 oz",
+        Capacity = "1 pint",
+        Price = 1.99M
+    },
+    new Jar
+    {
+        Name = "Spice Jar",
+        Type = "Spices",
+        Materials = "Glass",
+        Size = "4 oz",
+        Capacity = "4 oz",
+        Price = 2.49M
+    },
+    new Jar
+    {
+        Name = "Cookie Jar",
+        Type = "Bakery",
+        Materials = "Ceramic",
+        Size = "64 oz",
+        Capacity = "4 lbs",
+        Price = 14.99M
+    },
+    new Jar
+    {
+        Name = "Pickle Jar",
+        Type = "Pickling",
+        Materials = "Glass",
+        Size = "32 oz",
+        Capacity = "2 lbs",
+        Price = 3.99M
+    },
                     new Jar
                     {
-                        Name = "spiderman",
-                        ReleaseDate = DateTime.Parse("1989-2-12"),
-                        Type = "Action",
-                        Materials = "Glass",
-                        Size = "100",
-                        Capacity = "1lb",
-                        Rating = "C",
-                        Price = 7.99M
+                        Name = "Cereal Container",
+                        Type = "Breakfast",
+                        Materials = "Plastic",
+                        Size = "80 oz",
+                        Capacity = "4 lbs",
+                        Price = 7.49M
                     },
-                    new Jar
-                    {
-                        Name = "Captain",
-                        ReleaseDate = DateTime.Parse("1989-2-12"),
-                        Type = "Thriller",
-                        Materials = "Glass",
-                        Size = "100",
-                        Capacity = "1lb",
-                        Rating = "D",
-                        Price = 7.99M
-                    },
-                    new Jar
-                    {
-                        Name = "Antman",
-                        ReleaseDate = DateTime.Parse("1989-2-12"),
-                        Type = "#d",
-                        Materials = "Glass",
-                        Size = "100",
-                        Capacity = "1lb",
-                        Rating = "E",
-                        Price = 7.99M
-                    },
-                    new Jar
-                    {
-                        Name = "Groot",
-                        ReleaseDate = DateTime.Parse("1989-2-12"),
-                        Type = "History",
-                        Materials = "Glass",
-                        Size = "100",
-                        Capacity = "1lb",
-                        Rating = "F",
-                        Price = 7.99M
-                    }
+    new Jar
+    {
+        Name = "Coffee Canister",
+        Type = "Coffee",
+        Materials = "Stainless Steel",
+        Size = "16 oz",
+        Capacity = "16 oz",
+        Price = 12.99M
+    },
+    new Jar
+    {
+        Name = "Tea Tin",
+        Type = "Tea",
+        Materials = "Tin",
+        Size = "4 oz",
+        Capacity = "4 oz",
+        Price = 3.99M
+    },
+    new Jar
+    {
+        Name = "Olive Oil Bottle",
+        Type = "Cooking",
+        Materials = "Glass",
+        Size = "16 oz",
+        Capacity = "16 oz",
+        Price = 8.99M
+    }
+
 
 
 
